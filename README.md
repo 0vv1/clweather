@@ -1,13 +1,13 @@
 # clweather.py  
-  a small weather forecast script for the command line  
+small weather forecast script for the command line  
+[![license: GPL v3](https://img.shields.io/badge/license-GPL--3.0-3da638.svg?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0) 
+[![donate Bitcoins](https://img.shields.io/badge/donate-Bitcoin-f79413.svg?style=flat-square&logo=bitcoin)](#donations)  
   
-  ![20190426_cl-weather py_inTint2](https://user-images.githubusercontent.com/19635210/56842723-d1760080-6898-11e9-8f7c-0b47a067b0cb.png)  
-  ![20190427_cl-weather py_FwP_inTint2](https://user-images.githubusercontent.com/19635210/56851279-81855100-690d-11e9-8345-2e4660638c85.png)  
-  ![20190427_cl-weather py_ot_inTint2](https://user-images.githubusercontent.com/19635210/56851285-9d88f280-690d-11e9-9610-d2b0778115b7.png)
+  ![20190426_cl-weather py_inTint2](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/cl-weather.py_%40tint2_20190426.png) &nbsp; &nbsp; ![20190427_cl-weather py_FwP_inTint2](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/cl-weather.py_text_%40tint2_20190427.png) &nbsp; &nbsp; ![20190427_cl-weather py_ot_inTint2](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/cl-weather.py_extnsv_%40tint2_20190427.png)  
   
 ## description
 Shows the forecast of the coming measuring point within the next three hours by default.
-Uses the free forecast API of OpenWeatherMap, therefore needs an API key from OWM being handed over via -k switch.
+Uses the forecast API of OpenWeatherMap, therefore needs an API key from OWM being handed over via -k switch.
 Free of charge at https://openweathermap.org.
 
 ## features
@@ -42,3 +42,7 @@ Free of charge at https://openweathermap.org.
   show location of weather station  
 `-t, --text`  
   print text instead of symbols
+
+## donations
+![bc address btn](https://raw.githubusercontent.com/0vv1/Oystagony/assets/button/bc-add.png)  
+
