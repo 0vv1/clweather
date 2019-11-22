@@ -3,45 +3,49 @@ small weather forecast script for the command line
 [![license: GPL v3](https://img.shields.io/badge/license-GPL--3.0-3da638.svg?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0) 
 [![donate Bitcoins](https://img.shields.io/badge/donate-Bitcoin-f79413.svg?style=flat-square&logo=bitcoin)](#donations)  
   
-  ![20190426_cl-weather py_inTint2](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/cl-weather.py_%40tint2_20190426.png) &nbsp; &nbsp; ![20190427_cl-weather py_FwP_inTint2](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/cl-weather.py_text_%40tint2_20190427.png) &nbsp; &nbsp; ![20190427_cl-weather py_ot_inTint2](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/cl-weather.py_extnsv_%40tint2_20190427.png)  
+  ![cl-weather py.compact](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/20191122_cl-weather.py_compact_tint2.png) &nbsp; &nbsp; ![cl-weather py.text](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/20191122_cl-weather.py_text_tint2.png)  
   
 ## description
-Shows the forecast of the coming measuring point within the next three hours by default.
-Uses the forecast API of OpenWeatherMap, therefore needs an API key from OWM being handed over via -k switch.
-Free of charge at https://openweathermap.org.
+Shows the forecast of the next measuring point within the next three hours by default.  
+Uses the forecast API of OpenWeatherMap and therefore needs an API key from OWM being handed over via -k switch.  
+Free of charge at https://openweathermap.org.  
 
 ## features
- * shows __Unicode symbol__ by default depending on weather condition and daytime
- * therefore works with any font being patched with NerdFonts, but has a switch to toggle to '__text mode__ only' showing the main weather condition at the given time
- (see https://github.com/ryanoasis/nerd-fonts or https://nerdfonts.com for details)
- * by default the API of ip-api-com is called to determine the __current location__ if none is provided via cl parameters
- * has a switch to toggle to __imperial units__, while using __metric units__ by default
- * shows __location of weather station__ if the parameter -p is set
+ * shows __Unicode symbol__ by default depending on weather condition and daytime..  
+ * in order to show (the correct) Unicode symbols the used font needs to be patched with NerdFonts containing the nf-weather group icons  
+ * Weather Icons originally designed by Lukas Bischoff (https://artill.de)  
+ * see https://github.com/ryanoasis/nerd-fonts for details  
+ * ..but has a switch to toggle to '__text mode__ only'  
+ * if no geo location is provided via cl the (free) API of a location provider is called to determine the __current location__  
+ * has a switch to toggle to __imperial units__ and back to __metric__  
+ * shows __location of__ the used __weather station__ if the parameter `-p` is set
 
 ## depends on
- * `python lib argparse`
-    for convenient use of command line parameters
- * `python lib requests`
-    to grab JSON data from an API
+*   python lib `argparse`  
+    for convenient use of command line parameters  
+*   python lib `requests`  
+    to grab JSON data from an API  
+*   python libs `time` and `datetime`  
+    to deal with forecast times later then default  
 
 ## synopsis
 `clweather.py [option ..]`
 
 ### options
 `-h, --help`  
-  show this help message and exit  
+    show this help message and exit  
+`-a (API-)KEY`  
+    use api key to retrieve weather data  
 `-i, --imperial`  
-  switch to imperial units  
-`-k KEY, --key KEY`  
-  use api key to retrieve weather data  
+    switch to imperial units  
 `--latitude LAT`  
-  use latitude of a location  
+    use latitude of a location  
 `--longitude LONG`  
-  use longitude of a location  
+    use longitude of a location  
 `-p, --place`  
-  show location of weather station  
+    show location of weather station  
 `-t, --text`  
-  print text instead of symbols
+    print text instead of symbols  
 
 ## donations
 ![bc address btn](https://raw.githubusercontent.com/0vv1/Oystagony/assets/button/bc-add.png)  
