@@ -1,52 +1,73 @@
-# clweather.py  
+# clweather.py
+
 small weather forecast script for the command line  
 [![license: GPL v3](https://img.shields.io/badge/license-GPL--3.0-3da638.svg?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0) 
-[![donate Bitcoins](https://img.shields.io/badge/donate-Bitcoin-f79413.svg?style=flat-square&logo=bitcoin)](#donations)  
+[![script: Python](https://img.shields.io/badge/script-Python-3776ab.svg?style=flat-square&logo=python)](https://python.org) 
+[![AUR: clweather](https://img.shields.io/badge/AUR-clweather-1793d1.svg?style=flat-square&logo=arch-linux)](#install) 
+[![donation](https://img.shields.io/badge/donation-Buy%20me%20a%20coffee-f79413.svg?style=flat-square&logo=Buy-me-a-coffee)](#donation)  
   
-  ![cl-weather py.compact](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/20191122_cl-weather.py_compact_tint2.png) &nbsp; &nbsp; ![cl-weather py.text](https://raw.githubusercontent.com/0vv1/Oystagony/assets/scrot/20191122_cl-weather.py_text_tint2.png)  
+![cl-weather py.compact](https://0vv1.github.io/img/screenshot/clweather.20191122.compact_tint2.png) &nbsp; ![cl-weather py.text](https://0vv1.github.io/img/screenshot/clweather.20191122.text_tint2.png)  
   
 ## description
-Shows the forecast of the next measuring point within the next three hours by default.  
-Uses the forecast API of OpenWeatherMap and therefore needs an API key from OWM being handed over via -k switch.  
-Free of charge at https://openweathermap.org.  
 
+Shows weather forecast on the command line. Defaults to the next coming measuring point in time.  
+Uses the forecast API of OpenWeatherMap and therefore needs an API key from OWM.  
+Free of charge for personal use at https://openweathermap.org.  
+  
 ## features
+
  * shows __Unicode symbol__ by default depending on weather condition and daytime..  
  * in order to show (the correct) Unicode symbols the used font needs to be patched with NerdFonts containing the nf-weather group icons  
  * Weather Icons originally designed by Lukas Bischoff (https://artill.de)  
- * see https://github.com/ryanoasis/nerd-fonts for details  
+   (see https://github.com/ryanoasis/nerd-fonts for details)  
  * ..but has a switch to toggle to '__text mode__ only'  
- * if no geo location is provided via cl the (free) API of a location provider is called to determine the __current location__  
- * has a switch to toggle to __imperial units__ and back to __metric__  
- * shows __location of__ the used __weather station__ if the parameter `-p` is set
+ * if no geo location is provided via cl argument the API of a location provider is called to determine the __current location__  
+ * has a switch to use __imperial__ units instead of (default) __metric__  
+ * shows __location__ of the used __weather station__ if the parameter `-p` is set  
+  
+## install
 
-## depends on
-*   python lib `argparse`  
-    for convenient use of command line parameters  
-*   python lib `requests`  
-    to grab JSON data from an API  
-*   python libs `time` and `datetime`  
-    to deal with forecast times later then default  
+Just put the executable script anywhere inside your `$PATH` or link to it from elsewhere.  
+There also is an AUR package at https://aur.archlinux.org/packages/clweather.  
+ 
+### depends on
 
+*   `python` to interpret the script   
+*   python lib `argparse` for use of command line parameters  
+*   python lib `requests` to grab JSON data from online APIs  
+  
 ## synopsis
-`clweather.py [option ..]`
+execute `clweather.py [option(-s) ..] KEY`  
+or `clweather [option(-s) ..] KEY` (if installed systemwide via `PKGBUILD`)
+
+### mandatory argumenent
+
+`KEY` to access weather forecast API  
 
 ### options
-`-h, --help`  
-    show this help message and exit  
-`-a (API-)KEY`  
-    use api key to retrieve weather data  
-`-i, --imperial`  
-    switch to imperial units  
-`--latitude LAT`  
-    use latitude of a location  
-`--longitude LONG`  
-    use longitude of a location  
-`-p, --place`  
-    show location of weather station  
-`-t, --text`  
-    print text instead of symbols  
 
-## donations
-![bc address btn](https://raw.githubusercontent.com/0vv1/Oystagony/assets/button/bc-add.png)  
-
+`-h, --help`       shows help message and exits  
+`-i, --imperial`   switches to imperial units  
+`--latitude LAT`   uses latitude of a location  
+`--longitude LONG` uses longitude of a location  
+`-p, --place`      shows location of weather station  
+`-t, --text`       prints text instead of symbols  
+  
+## donation 
+  
+[![button: BMAC](https://0vv1.github.io/img/button/Buy-me-a-Coffee_default-orange.png)](https://buymeacoffee.com/0vv1) &nbsp; &nbsp; &nbsp; &nbsp; 
+[![button: PayPal](https://0vv1.github.io/img/button/donate_PayPal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=M0N0@0vv1.io&lc=DE&item_name=Donation+for+0vv1.io&no_note=0&cn=&currency_code=EUR&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
+</br></br>  
+<p>
+<details>
+<summary>Monero</summary>
+<pre><img src="https://0vv1.github.io/img/button/add.receive.mnr+button.png"></pre>
+</details>
+</p>
+<p>
+<details>
+<summary>BitCoin</summary>
+<pre><img src="https://0vv1.github.io/img/button/add.receive.bc+button.png"></pre>
+</details>
+</p>
+  

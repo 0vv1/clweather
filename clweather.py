@@ -10,23 +10,18 @@
 #           These Weather Icons are originally designed by
 #           Lukas Bischoff (https://artill.de), later
 #           developments by Erik Flowers
-#           (https://github.com/erikflowers)?
+#           (https://github.com/erikflowers).
 #           See https://nerdfonts.com/#home for more infos.
 # ----------------------------------------------------------
 
 import argparse
-import codecs
-import json
+from datetime import datetime
 import requests
 import sys
-sys.stdout = codecs.getwriter('utf8')(sys.stdout)
-sys.stderr = codecs.getwriter('utf8')(sys.stderr)
-import time
-from datetime import datetime
 
 # command line arguments
 parser = argparse.ArgumentParser()
-parser.add_argument('-a', action='store', dest='apikey', help="API key to retrieve weather data")
+parser.add_argument("key", help="API key to retrieve weather data")
 parser.add_argument('-f', action='store', dest='ftime', type=float, help="show forecast for given number of hours in advance")
 parser.add_argument('-i', '--imperial', action='store_true', help="switch to imperial units")
 parser.add_argument('--latitude', action='store', dest='lat', help="use latitude of a location")
@@ -36,8 +31,8 @@ parser.add_argument('-t', '--text', action='store_true', help="print text instea
 args = parser.parse_args()
 
 # API key assignment via argument
-if args.apikey:
-    api_key = args.apikey
+if args.key:
+    api_key = args.key
 else: sys.exit('No API key given.')
 
 # forecast time argument
@@ -255,4 +250,4 @@ else:
             print(symbol_clk + ' ' + symbol_cond + tempForecast + u'\ue341')
         else: print(symbol_clk + ' ' + symbol_cond + tempForecast + u'\ue339')
 
-# EOF ${SCR_DIR}/clweather/clweather.py --------------------
+# EOF ${SCR_DIR}/clweather.py ------------------------------
