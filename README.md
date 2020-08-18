@@ -17,7 +17,7 @@ Free of charge for personal use at https://openweathermap.org.
 ## features
 
  * shows __Unicode symbol__ by default depending on weather condition and daytime..  
- * in order to show (the correct) Unicode symbols the used font needs to be patched with NerdFonts containing the nf-weather group icons  
+ * in order to show (the correct) Unicode symbols the used font needs to be patched with Weather Icons e.g. NerdFonts containing the nf-weather group icons  
  * Weather Icons originally designed by Lukas Bischoff (https://artill.de)  
    (see https://github.com/ryanoasis/nerd-fonts for details)  
  * ..but has a switch to toggle to '__text mode__ only'  

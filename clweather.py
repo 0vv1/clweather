@@ -1,16 +1,14 @@
 #!/usr/bin/env python
-# @author   (c) 2019 Alexander Puls <https://0vv1.io>
+# @author   (c) 2019 - 2020 Alexander Puls <https://0vv1.io>
 # @license  GPL v3 <https://opensource.org/licenses/GPL-3.0>
-# @version  1.2
+# @version  1.3
 # note:     Needs an API key from OpenWeatherMap, available
 #           for free at https://openweathermap.org.
-#           In order to show (the correct) Unicode symbols
-#           the used font needs to be patched with Nerd
-#           Fonts containing the nf-weather group icons.
-#           These Weather Icons are originally designed by
-#           Lukas Bischoff (https://artill.de), later
-#           developments by Erik Flowers
-#           (https://github.com/erikflowers).
+#           The used font needs to be patched with certain
+#           symbols e.g. Weather Icons by Lukas Bischoff
+#           (https://www.artill.de/weather-icon-font/).
+#           This icons are included in most Nerd-Fonts as
+#           nf-weather group icons.
 #           See https://nerdfonts.com/#home for more infos.
 # ----------------------------------------------------------
 
@@ -118,13 +116,29 @@ if forecast['list'][listID]['sys']['pod'] == 'd':
 else: daylight = False
 
 # Unicode clock symbol assignment
-if timeForecast == '01:00' or timeForecast == '13:00':
+if timeForecast == '00:00' or timeForecast == '12:00':
+    symbol_clk = u'\ue381'
+elif timeForecast == '01:00' or timeForecast == '13:00':
     symbol_clk = u'\ue382'
+elif timeForecast == '02:00' or timeForecast == '14:00':
+    symbol_clk = u'\ue383'
+elif timeForecast == '03:00' or timeForecast == '15:00':
+    symbol_clk = u'\ue384'
 elif timeForecast == '04:00' or timeForecast == '16:00':
     symbol_clk = u'\ue385'
+elif timeForecast == '05:00' or timeForecast == '17:00':
+    symbol_clk = u'\ue386'
+elif timeForecast == '06:00' or timeForecast == '18:00':
+    symbol_clk = u'\ue387'
 elif timeForecast == '07:00' or timeForecast == '19:00':
     symbol_clk = u'\ue388'
+elif timeForecast == '08:00' or timeForecast == '20:00':
+    symbol_clk = u'\ue389'
+elif timeForecast == '09:00' or timeForecast == '21:00':
+    symbol_clk = u'\ue38a'
 elif timeForecast == '10:00' or timeForecast == '22:00':
+    symbol_clk = u'\ue38b'
+elif timeForecast == '11:00' or timeForecast == '23:00':
     symbol_clk = u'\ue38c'
 else: symbol_clk = u'\uf527'
 
