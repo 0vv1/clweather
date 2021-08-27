@@ -261,7 +261,7 @@ else:
         else: print(symbol_clk + ' ' + symbol_cond + ' ' + tempForecast + u'\u00b0' + 'C in ' + cityForecast)
     else:
         if args.imperial:
-            print(symbol_clk + ' ' + symbol_cond + tempForecast + u'\ue341')
-        else: print(symbol_clk + ' ' + symbol_cond + tempForecast + u'\ue339')
+            print(symbol_clk + ' ' + symbol_cond + ' ' + tempForecast + u'\ue341')
+        else: print(symbol_clk + ' ' + symbol_cond + ' ' + tempForecast + u'\ue339')
 
 # EOF ${SCR_DIR}/clweather.py ------------------------------
