@@ -4,7 +4,6 @@ small weather forecast script for the command line
 [![license: GPL v3](https://img.shields.io/badge/license-GPL--3.0-3da638.svg?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0) 
 [![script: Python](https://img.shields.io/badge/script-Python-3776ab.svg?style=flat-square&logo=python)](https://python.org) 
 [![AUR: clweather](https://img.shields.io/badge/AUR-clweather-1793d1.svg?style=flat-square&logo=arch-linux)](#install) 
-[![donation](https://img.shields.io/badge/donation-Buy%20me%20a%20coffee-f79413.svg?style=flat-square&logo=Buy-me-a-coffee)](#donation)  
   
 ![cl-weather py.compact](https://0vv1.github.io/img/screenshot/clweather.20191122.compact_tint2.png) &nbsp; ![cl-weather py.text](https://0vv1.github.io/img/screenshot/clweather.20191122.text_tint2.png)  
   
@@ -52,16 +51,3 @@ or `clweather [option(-s) ..] KEY` (if installed systemwide via `PKGBUILD`)
 `--longitude LONG` uses longitude of a location  
 `-p, --place`      shows location of weather station  
 `-t, --text`       prints text instead of symbols  
-  
-## donation 
-  
-[![button: BMAC](https://0vv1.github.io/img/button/Buy-me-a-Coffee_default-orange.png)](https://buymeacoffee.com/0vv1) &nbsp; &nbsp; &nbsp; &nbsp; 
-</br>
-
-<p>
-<details>
-<summary>BitCoin</summary>
-<pre><img src="https://0vv1.github.io/img/button/add.receive.bc+button.png"></pre>
-</details>
-</p>
-  
