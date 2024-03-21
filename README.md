@@ -5,7 +5,7 @@ small weather forecast script for the command line
 [![script: Python](https://img.shields.io/badge/script-Python-3776ab.svg?style=flat-square&logo=python)](https://python.org) 
 [![AUR: clweather](https://img.shields.io/badge/AUR-clweather-1793d1.svg?style=flat-square&logo=arch-linux)](#install) 
   
-![cl-weather py.compact](https://0vv1.github.io/img/screenshot/clweather.20191122.compact_tint2.png) &nbsp; ![cl-weather py.text](https://0vv1.github.io/img/screenshot/clweather.20191122.text_tint2.png)  
+![cl-weather py.compact](https://0vv1.net/assets/img/cl-weather.2019-11-22_tint2-compact.png) &nbsp; ![cl-weather py.text](https://0vv1./assets/img/cl-weather.2019-11-22_tint2-text.png)  
   
 ## description
 
